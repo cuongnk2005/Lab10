@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.example.project2"
     compileSdk = 35
-
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.example.project2"
         minSdk = 26
@@ -25,6 +27,7 @@ android {
                 "proguard-rules.pro"
             )
         }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
